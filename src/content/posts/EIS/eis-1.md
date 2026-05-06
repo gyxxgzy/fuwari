@@ -100,7 +100,7 @@ $$Z=R+j_0$$
 
 考虑到其虚部为0，所以在Nyquist图上反映为实轴上的单个点。
 
-<div align="center"><img src="./EIS-1/image-20241206104656516.png" alt="image-20241206104656516" style="width: 70%;" /></div>
+![image-20241206104656516](./EIS-1/image-20241206104656516.png)
 
 **当电路中只包含一个电容时**，阻抗方程为：
 
@@ -108,7 +108,7 @@ $$Z=0+\frac{1}{j\omega C}=0-j\frac{1}{\omega C}$$
 
 实部为零，而虚部与电容和频率成反比。因此，Nyquist图显示*y*轴上有一条直线（实际阻抗为零）。接近零的值对应于高频，而在较低频率下，阻抗值较高。
 
-<div align="center"><img src="./EIS-1/image-20241206105408118.png" alt="image-20241206105408118" style="width: 70%;" /></div>
+![image-20241206105408118](./EIS-1/image-20241206105408118.png)
 
 **当电路仅包含电感时**，阻抗方程为：
 
@@ -116,7 +116,7 @@ $$Z=0+\omega L$$
 
 实部为零，而虚部与线圈的电感和频率成正比。因此，奈奎斯特图显示一条直线位于*y*轴上，位于实轴下方.
 
-<div align="center"><img src="./EIS-1/image-20241206110834142.png" alt="image-20241206110834142" style="width: 70%;" /></div>
+![image-20241206110834142](./EIS-1/image-20241206110834142.png)
 
 当电路包含串联的电阻器和电容器时，阻抗方程为：
 
@@ -126,7 +126,7 @@ $$Z(\omega)=\mathrm{R} 1+\frac{1}{j \omega \mathrm{C} 1}=\mathrm{R} 1-j \frac{1}
 
 
 
-<div align="center"><img src="./EIS-1/image-20241206111313104.png" alt="image-20241206111313104" style="width: 70%;" /></div>
+![image-20241206111313104](./EIS-1/image-20241206111313104.png)
 
 当电路中仅包含一个电阻或者一个电容时，Nyquist图为上述图的组合
 
@@ -138,7 +138,7 @@ $$Z(\omega)=\frac{1}{\frac{1}{\mathrm{R} 1}+j \omega \mathrm{C} 1}=\frac{\mathrm
 
 在这种情况下，在非常高的频率下，容抗趋于零，所有电流都通过电容器；在非常低的频率下，容抗趋于无穷大
 
-<div align="center"><img src="./EIS-1/image-20241206132503654.png" alt="image-20241206132503654" style="width: 70%;" /></div>
+![image-20241206132503654](./EIS-1/image-20241206132503654.png)
 
 这个阻抗方程分为实部虚部写为：
 
@@ -164,7 +164,7 @@ $$\left(Z_{R e}-\frac{1}{2} R_1\right)^2+Z_{Im}^2=\frac{1}{4}R_1^2$$
 
 $$Z(\omega)=\mathrm{R} 0+\frac{\mathrm{R} 1}{1+(\omega \mathrm{R} 1 \mathrm{C} 1)^2}-j \frac{\omega \mathrm{R} 1^2 \mathrm{C} 1}{1+(\omega \mathrm{R} 1 \mathrm{C} 1)^2}$$
 
-<div align="center"><img src="./EIS-1/image-20241206151418212.png" alt="image-20241206151418212" style="width: 70%;" /></div>
+![image-20241206151418212](./EIS-1/image-20241206151418212.png)
 
 同理可以转换为：
 
@@ -174,7 +174,7 @@ $$\left(Z_{R e}-R_0-\frac{1}{2} R_1\right)^2+Z_{Im}^2=\frac{1}{4}R_1^2$$
 
 若在下面的电路中，阻抗方程可以写为：
 
-<div align="center"><img src="./EIS-1/image-20241206161100059.png" alt="image-20241206161100059" style="width: 70%;" /></div>
+![image-20241206161100059](./EIS-1/image-20241206161100059.png)
 $$
 Z(\omega) = \left[\mathrm{R}_0 + \frac{\mathrm{R}_1}{(\omega \mathrm{R}_1 \mathrm{C}_2)^2 + 1} + \frac{\mathrm{R}_2}{(\omega \mathrm{R}_2 \mathrm{C}_1)^2 + 1}\right] - j \left[\frac{\omega \mathrm{R}_1^2 \mathrm{C}_2}{(\omega \mathrm{R}_1 \mathrm{C}_2)^2 + 1} + \frac{\omega \mathrm{R}_2^2 \mathrm{C}_1}{(\omega \mathrm{R}_2 \mathrm{C}_1)^2 + 1}\right]
 $$
@@ -207,14 +207,14 @@ y_1^2&=x_1(R_1-x_1)
 \end{aligned}$$
 这是两个半径为$\frac{R_1}{2},\frac{R_2}{2}$的圆，因此，这个情况下，实部和虚部在复平面内形成两个叠加的半圆，其叠加的程度取决于参数$k=\frac{R_2C_1}{R_1C_2}$的值，或者说取决于两个电容和电阻的值。
 
-<div align="center"><img src="./EIS-1/image-20241206181331352.png" alt="image-20241206181331352" style="width: 70%;" /></div>
+![image-20241206181331352](./EIS-1/image-20241206181331352.png)
 
 
 ## The Randles（兰德尔斯） 电路
 
 电池体系中存在氧化还原对 (Ox/Red)，在这种情况下施加小的正弦电压扰动测量电化学电池，满足法拉第EIS─兰德尔斯电路。下图给出Randles电路的等效电路图：
 
-<div align="center"><img src="./EIS-1/image-20241223183445885.png" alt="image-20241223183445885" style="width: 70%;" /></div>
+![image-20241223183445885](./EIS-1/image-20241223183445885.png)
 
 其中，总阻抗$Z_F$为氧化还原反应过程的动力学和氧化还原物质向工作电极表面的扩散；$C_{dl}$代表电极|电解质界面处的双电层表现出的电容器；未补偿电阻$R_u$表示在小幅度电压扰动下，参比电极和工作电极之间电解质的欧姆电阻，大多数情况下可以忽略不记。
 
@@ -270,7 +270,7 @@ $$
 $$
 最终，理想 Randles 电路的Nyquist图为
 
-<div align="center"><img src="./EIS-1/image-20241223192442552.png" alt="image-20241223192442552" style="width: 70%;" /></div>
+![image-20241223192442552](./EIS-1/image-20241223192442552.png)
 
 ## 恒相位元件（CPE）
 
@@ -288,7 +288,7 @@ $$
 $$\theta=90^{\circ}(1-n)$$
 特别的，当n=0时，阻抗可以写作$Z=Y_0^{-1}$，此时CPE表现为电阻；当n=0.5时，方程可以写作$Z=1/Y_0\sqrt{j\omega}$，即为Warburg阻抗$Z_W$。
 
-<div align="center"><img src="./EIS-1/image-20241224155147639.png" alt="image-20241224155147639" style="width: 70%;" /></div>
+![image-20241224155147639](./EIS-1/image-20241224155147639.png)
 
 ## 锂离子电池中的EIS
 
@@ -302,25 +302,25 @@ $$\theta=90^{\circ}(1-n)$$
 
 下载网站：https://www.iam.kit.edu/et/english/Lin-KK.php
 
-<div align="center"><img src="./EIS-1/image-20250518164137555.png" alt="image-20250518164137555" style="width: 70%;" /></div>
+![image-20250518164137555](./EIS-1/image-20250518164137555.png)
 
-<div align="center"><img src="./EIS-1/image-20250518164159731.png" alt="image-20250518164159731" style="width: 70%;" /></div>
+![image-20250518164159731](./EIS-1/image-20250518164159731.png)
 
 在如上界面中找到Download即可，这里需要注意的是，经过我个人的尝试，安装64位软件有可能会导致软件反复出现闪退和无法导入数据的情况，如果需要下载64位，请基于自己的电脑的实际情况进行尝试，这里以32位软件为例。
 
 下载后安装包内理论上包含下列内容：
 
-<div align="center"><img src="./EIS-1/image-20250518164428529.png" alt="image-20250518164428529" style="width: 70%;" /></div>
+![image-20250518164428529](./EIS-1/image-20250518164428529.png)
 
 双击exe文件即可开始安装，然后一路按照指示安装即可，需要注意的是软件需要基于Matlab，所以会在过程中自动安装Matlab R2013b 软件，请确保磁盘有足够的空间进行安装。
 
-<div align="center"><img src="./EIS-1/image-20250518164524875.png" alt="image-20250518164524875" style="width: 70%;" /></div>
+![image-20250518164524875](./EIS-1/image-20250518164524875.png)
 
-<div align="center"><img src="./EIS-1/image-20250518164645034.png" alt="image-20250518164645034" style="width: 70%;" /></div>
+![image-20250518164645034](./EIS-1/image-20250518164645034.png)
 
 安装完成后运行，如果看到这个界面，即为安装成功。
 
-<div align="center"><img src="./EIS-1/image-20250518164806054.png" alt="image-20250518164806054" style="width: 70%;" /></div>
+![image-20250518164806054](./EIS-1/image-20250518164806054.png)
 
 ### 数据导入
 
@@ -328,19 +328,19 @@ $$\theta=90^{\circ}(1-n)$$
 
 Excel文件：请按照下列格式进行数据处理，请注意不要修改表头。
 
-<div align="center"><img src="./EIS-1/image-20250518165404189.png" alt="image-20250518165404189" style="width: 70%;" /></div>
+![image-20250518165404189](./EIS-1/image-20250518165404189.png)
 
 TXT文件：请按照下列格式进行数据处理，请注意不要修改表头。
 
-<div align="center"><img src="./EIS-1/image-20250518165818119.png" alt="image-20250518165818119" style="width: 70%;" /></div>
+![image-20250518165818119](./EIS-1/image-20250518165818119.png)
 
 修改完成格式后，在软件内导入对应的文件，如果能看到蓝色的点，即为导入成功。
 
-<div align="center"><img src="./EIS-1/image-20250518165922103.png" alt="image-20250518165922103" style="width: 70%;" /></div>
+![image-20250518165922103](./EIS-1/image-20250518165922103.png)
 
 完成导入后按照自己的需求修改Set Preferences 位置的相关参数，并点击Start位置的按钮，出现红色点即表示完成。红色点即为通过K-K验证计算出的实部和虚部，下方为数据的误差情况。完成后可以在Save对数据进行保存。
 
-<div align="center"><img src="./EIS-1/image-20250518170414813.png" alt="image-20250518170414813" style="width: 70%;" /></div>
+![image-20250518170414813](./EIS-1/image-20250518170414813.png)
 
 到此即完成Lin_KK进行KK验证的主要步骤。
 
