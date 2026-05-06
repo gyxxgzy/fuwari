@@ -142,17 +142,17 @@ $$Z(\omega)=\frac{1}{\frac{1}{\mathrm{R} 1}+j \omega \mathrm{C} 1}=\frac{\mathrm
 
 这个阻抗方程分为实部虚部写为：
 
-$$\begin{aligned}
-& Z_{R_e}=\frac{R_1}{1+\left(w R_1 C_1\right)^2} \\
-& Z_{I m}=\frac{\omega  R_1^2 C_1}{1+\left(w R_1 C_1\right)^2}
-\end{aligned}$$
+$$
+Z_{R_e}=\frac{R_1}{1+\left(w R_1 C_1\right)^2} \\
+Z_{I m}=\frac{\omega  R_1^2 C_1}{1+\left(w R_1 C_1\right)^2}
+$$
 
 注意到，上面两式可以变换为：
 
-$$\begin{aligned}
-& \left(Z_{R e}-\frac{1}{2} R_1\right)^2=\frac{\left.R_1^2-R_1^2\left[1+\left(w R_1 C_1\right)^2\right]+\frac{1}{4} R_1^2\left[1+W R_1 C_1\right]^2\right]^2}{\left[1+\left(W R_1 C_1\right)^2\right]^2} \\
-& Z_{I m}^2=\frac{\left(\omega R_1^2 C_1\right)^2}{\left[1+\left(\omega R_1 C_1\right)^2\right]^2}
-\end{aligned}$$
+$$
+\left(Z_{R e}-\frac{1}{2} R_1\right)^2=\frac{\left.R_1^2-R_1^2\left[1+\left(w R_1 C_1\right)^2\right]+\frac{1}{4} R_1^2\left[1+W R_1 C_1\right]^2\right]^2}{\left[1+\left(W R_1 C_1\right)^2\right]^2} \\
+Z_{I m}^2=\frac{\left(\omega R_1^2 C_1\right)^2}{\left[1+\left(\omega R_1 C_1\right)^2\right]^2}
+$$
 
 两边相加可以得到：
 
@@ -162,7 +162,9 @@ $$\left(Z_{R e}-\frac{1}{2} R_1\right)^2+Z_{Im}^2=\frac{1}{4}R_1^2$$
 
 **当在下列电路中时**，阻抗方程可以写为：
 
-$$Z(\omega)=\mathrm{R} 0+\frac{\mathrm{R} 1}{1+(\omega \mathrm{R} 1 \mathrm{C} 1)^2}-j \frac{\omega \mathrm{R} 1^2 \mathrm{C} 1}{1+(\omega \mathrm{R} 1 \mathrm{C} 1)^2}$$
+$$
+Z(\omega)=\mathrm{R} 0+\frac{\mathrm{R} 1}{1+(\omega \mathrm{R} 1 \mathrm{C} 1)^2}-j \frac{\omega \mathrm{R} 1^2 \mathrm{C} 1}{1+(\omega \mathrm{R} 1 \mathrm{C} 1)^2}
+$$
 
 ![image-20241206151418212](./EIS-1/image-20241206151418212.png)
 
@@ -175,36 +177,40 @@ $$\left(Z_{R e}-R_0-\frac{1}{2} R_1\right)^2+Z_{Im}^2=\frac{1}{4}R_1^2$$
 若在下面的电路中，阻抗方程可以写为：
 
 ![image-20241206161100059](./EIS-1/image-20241206161100059.png)
+
 $$
 Z(\omega) = \left[\mathrm{R}_0 + \frac{\mathrm{R}_1}{(\omega \mathrm{R}_1 \mathrm{C}_2)^2 + 1} + \frac{\mathrm{R}_2}{(\omega \mathrm{R}_2 \mathrm{C}_1)^2 + 1}\right] - j \left[\frac{\omega \mathrm{R}_1^2 \mathrm{C}_2}{(\omega \mathrm{R}_1 \mathrm{C}_2)^2 + 1} + \frac{\omega \mathrm{R}_2^2 \mathrm{C}_1}{(\omega \mathrm{R}_2 \mathrm{C}_1)^2 + 1}\right]
 $$
+
 实部和虚部为：
-$$
-Z'(\omega) = \mathrm{R}_0 + \frac{\mathrm{R}_1}{(\omega \mathrm{R}_1 \mathrm{C}_2)^2 + 1} + \frac{\mathrm{R}_2}{(\omega \mathrm{R}_2 \mathrm{C}_1)^2 + 1}
-$$
 
 $$
+Z'(\omega) = \mathrm{R}_0 + \frac{\mathrm{R}_1}{(\omega \mathrm{R}_1 \mathrm{C}_2)^2 + 1} + \frac{\mathrm{R}_2}{(\omega \mathrm{R}_2 \mathrm{C}_1)^2 + 1}\\
 Z''(\omega) = -\left[\frac{\omega \mathrm{R}_1^2 \mathrm{C}_2}{(\omega \mathrm{R}_1 \mathrm{C}_2)^2 + 1} + \frac{\omega \mathrm{R}_2^2 \mathrm{C}_1}{(\omega \mathrm{R}_2 \mathrm{C}_1)^2 + 1}\right]
 $$
+
 根据大佬朋友的分析，**其形状受到电阻和电容数值的调控**（倒也合理）：
 
 令$u=\omega R_1C_2,k=\frac{R_2C_1}{R_1C_2}$，则
-$$\begin{aligned}
-Z'(\omega) &= R_0+\frac{R_1}{u^2+1}+\frac{R_2}{(ku)^2+1} \\
-Z''(\omega) &= -(\frac{uR_1}{u^2+1}+\frac{kuR_2}{(ku)^2+1})
-\end{aligned}$$
+
+$$
+Z'(\omega) = R_0+\frac{R_1}{u^2+1}+\frac{R_2}{(ku)^2+1}\\
+Z''(\omega) = -(\frac{uR_1}{u^2+1}+\frac{kuR_2}{(ku)^2+1})
+$$
+
 可以进一步写为：
 
+$$
+y_1 = R_0+x_1+x_2\\
+y_2 = -(y_1+y_2)
+$$
 
-$$\begin{aligned}
-y_1 &= R_0+x_1+x_2 \\
-y_2 &= -(y_1+y_2)
-\end{aligned}$$
 其中，易得
-$$\begin{aligned}
-y_1^2&=x_1(R_1-x_1) \\
-y_1^2&=x_1(R_1-x_1)
-\end{aligned}$$
+$$
+y_1^2 =x_1(R_1-x_1) \\
+y_1^2 =x_1(R_1-x_1)
+$$
+
 这是两个半径为$\frac{R_1}{2},\frac{R_2}{2}$的圆，因此，这个情况下，实部和虚部在复平面内形成两个叠加的半圆，其叠加的程度取决于参数$k=\frac{R_2C_1}{R_1C_2}$的值，或者说取决于两个电容和电阻的值。
 
 ![image-20241206181331352](./EIS-1/image-20241206181331352.png)
@@ -219,29 +225,38 @@ y_1^2&=x_1(R_1-x_1)
 其中，总阻抗$Z_F$为氧化还原反应过程的动力学和氧化还原物质向工作电极表面的扩散；$C_{dl}$代表电极|电解质界面处的双电层表现出的电容器；未补偿电阻$R_u$表示在小幅度电压扰动下，参比电极和工作电极之间电解质的欧姆电阻，大多数情况下可以忽略不记。
 
 就总阻抗$Z_F$而言，其满足
+
 $$
 Z_{\mathrm{F}}=R_{\mathrm{ct}}+Z_{\mathrm{W}}
 $$
+
 其中，$R_{ct}$为电荷转移阻抗与假设氧化还原物质不吸附在电极表面时的非均相电化学过程动力学有关，
+
 $$
  R_{\mathrm{ct}}=\frac{R T}{k^0 n^2 F^2 A C} 
 $$
+
 其中$k^0$是非均相电子转移速率，单位为 $cm\cdot s^{-1}$， n是电化学反应中转移的电子数， *F*是法拉第常数，*R*是气体常数，*T*是温度，*A*是工作电极的电活性表面积（以 $cm^2$为单位）， *C*是氧化还原物质的浓度，假设该浓度与本体溶液中的相同，
 
 $Z_W$为Warburg阻抗，表示考虑半无限线性扩散时氧化还原物质向电极表面质量传输的难度，也被称为扩散电阻。这一阻抗取决于
 电位扰动的频率。高频时，因反应物不必扩散太远，Warburg阻抗很小。低频时，反应物需扩散很远，造成Warburg阻抗增大。
 
 $Z_W$表现为$R_W-C_W$的串联电路，其中$R_W$和$C_W$都与频率相关，因此可以写为：
+
 $$
 Z_{\mathrm{W}}=R_{\mathrm{W}}+C_{\mathrm{W}}=\left[\sigma \omega^{-1 / 2}-j\left(\sigma \omega^{-1 / 2}\right)\right]
 $$
+
 其中，$\sigma$为
+
 $$
 \sigma=\frac{2 R T}{n^2 F^2 \sqrt{2} \sqrt{D} C}
 $$
+
 *D*为氧化还原对的扩散系数，单位为$(\mathrm{cm^2s^{-1}})$
 
 在以上电路中，其在较宽频率范围的阻抗实部和虚部分别为：
+
 $$
 Z^{\prime}=R_{\mathrm{u}}+\frac{R_{\mathrm{ct}}+\sigma \omega^{-1 / 2}}{\left(\sigma \omega^{1 / 2} C_{\mathrm{dl}}+1\right)^2+\omega^2 C_{\mathrm{dl}}^2\left(R_{\mathrm{ct}}+\sigma \omega^{-1 / 2}\right)^2} \\
 -Z^{\prime \prime}=\frac{\omega C_{\mathrm{dl}}\left(R_{\mathrm{ct}}+\sigma \omega^{-1 / 2}\right)^2+\sigma^2 C_{\mathrm{dl}}+\sigma \omega^{-1 / 2}}{\left(\sigma \omega^{1 / 2} C_{\mathrm{dl}}+1\right)^2+\omega^2 C_{\mathrm{dl}}^2\left(R_{\mathrm{ct}}+\sigma \omega^{-1 / 2}\right)^2}
@@ -250,24 +265,31 @@ $$
 在低频时，$C_{dl}$所在电路无法导通，电流通过$R_u,R_{ct},Z_W$，三者相互串联，实部虚部分别为：
 
 $$
-\begin{aligned}
-& Z^{\prime}=R_{\mathrm{u}}+R_{\mathrm{ct}}+\sigma \omega^{-1 / 2} \\
-& Z^{\prime \prime}=-\sigma \omega^{-1 / 2}-2 \sigma^2 C_{\mathrm{dl}} \\
-\end{aligned}
+Z^{\prime}=R_{\mathrm{u}}+R_{\mathrm{ct}}+\sigma \omega^{-1 / 2} \\
+Z^{\prime \prime}=-\sigma \omega^{-1 / 2}-2 \sigma^2 C_{\mathrm{dl}}
 $$
+
 化简可以得到：
+
 $$-Z^{\prime \prime}=Z^{\prime}-R_{\mathrm{u}}-R_{\mathrm{ct}}+2 \sigma^2 C_{\mathrm{dl}}$$
+
 可以看出，在低频范围内，其图像为斜率为1的直线，其与实轴交与点
+
 $$Z^{\prime}=R_{\mathrm{u}}+R_{\mathrm{ct}}-2 \sigma^2 C_{\mathrm{dl}}$$
+
 在高频下，$C_{dl}$不可忽略，同时考虑$R_{ct}\gg Z_W$，因此电路为$C_{dl}$与$R_{ct}$并联再与$R_u$串联，此时的形式与之前证明的相同，实部虚部为：
-$$\begin{aligned}
-Z^{\prime}&=R_{\mathrm{u}}+\frac{R_{\mathrm{ct}}}{1+\omega^2 C_{\mathrm{dl}}^2 R_{\mathrm{ct}}^2} \\
-Z^{\prime \prime}&=-\frac{\omega C_{\mathrm{dl}} R_{\mathrm{ct}}^2}{1+\omega^2 C_{\mathrm{dl}}^2 R_{\mathrm{ct}}^2}
-\end{aligned}$$
+
+$$
+Z^{\prime} =R_{\mathrm{u}}+\frac{R_{\mathrm{ct}}}{1+\omega^2 C_{\mathrm{dl}}^2 R_{\mathrm{ct}}^2} \\
+Z^{\prime \prime} =-\frac{\omega C_{\mathrm{dl}} R_{\mathrm{ct}}^2}{1+\omega^2 C_{\mathrm{dl}}^2 R_{\mathrm{ct}}^2}
+$$
+
 其形式为一个圆，方程为：
+
 $$
 \left(Z^{\prime}-R_{\mathrm{u}}-\frac{R_{\mathrm{ct}}}{2}\right)^2+\left(Z^{\prime \prime}\right)^2=\left(\frac{R_{\mathrm{ct}}}{2}\right)^2
 $$
+
 最终，理想 Randles 电路的Nyquist图为
 
 ![image-20241223192442552](./EIS-1/image-20241223192442552.png)
@@ -285,7 +307,11 @@ Z_{\mathrm{CPE}}=\frac{1}{Y_{\mathrm{o}}(j \omega)^n}
 $$
 
 其中，$Y_0$为包含电容信息的参数，单位为$(Ohm^{-1}s^n )$或$(F s^{n-1})$，n为范围为0~1的常数，定义为与理想双电层电容行为的偏差（理想状态下$\phi =90^{\circ}$），其与阻抗谱倾斜程度$\theta$的关系为：
-$$\theta=90^{\circ}(1-n)$$
+
+$$
+\theta=90^{\circ}(1-n)
+$$
+
 特别的，当n=0时，阻抗可以写作$Z=Y_0^{-1}$，此时CPE表现为电阻；当n=0.5时，方程可以写作$Z=1/Y_0\sqrt{j\omega}$，即为Warburg阻抗$Z_W$。
 
 ![image-20241224155147639](./EIS-1/image-20241224155147639.png)
@@ -299,7 +325,6 @@ $$\theta=90^{\circ}(1-n)$$
 ### 软件下载与安装
 
 考虑到软件本身有文献支撑，且是在互联网上公开的信息，因此这里针对下载主要给出在官网界面上下载的方法。
-
 下载网站：https://www.iam.kit.edu/et/english/Lin-KK.php
 
 ![image-20250518164137555](./EIS-1/image-20250518164137555.png)
@@ -307,7 +332,6 @@ $$\theta=90^{\circ}(1-n)$$
 ![image-20250518164159731](./EIS-1/image-20250518164159731.png)
 
 在如上界面中找到Download即可，这里需要注意的是，经过我个人的尝试，安装64位软件有可能会导致软件反复出现闪退和无法导入数据的情况，如果需要下载64位，请基于自己的电脑的实际情况进行尝试，这里以32位软件为例。
-
 下载后安装包内理论上包含下列内容：
 
 ![image-20250518164428529](./EIS-1/image-20250518164428529.png)
@@ -325,7 +349,6 @@ $$\theta=90^{\circ}(1-n)$$
 ### 数据导入
 
 实验室内常见的获取阻抗数据的设备可能有辰华CHI660/760e，普林斯顿等，这些设备配套的软件导出的数据文件结构各不相同，这里在导入前需要确保数据格式满足下面的要求。
-
 Excel文件：请按照下列格式进行数据处理，请注意不要修改表头。
 
 ![image-20250518165404189](./EIS-1/image-20250518165404189.png)
