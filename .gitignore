@@ -32,3 +32,9 @@ yarn.lock
 
 # claude code local settings
 .claude/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
