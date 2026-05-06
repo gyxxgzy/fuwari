@@ -48,7 +48,7 @@ draft: false
 可能美中不足的是，和chatbox、cherry studio等比较出名的软件相比，chatwise软件的高级版需要购买，且不是买断制，长期使用可能每年都有一笔20美元的支出，但由于界面简洁没有广告，chatwise依然是我最为推荐的LLM Windows软件。
 
 <p align="center">
-  <img src="AI_tool_recommend/PixPin_2026-05-02_13-57-53.png" width="400" alt="Chatwise设置界面">
+  <img src="./AI_tool_recommend/PixPin_2026-05-02_13-57-53.png" width="400" alt="Chatwise设置界面">
 </p>
 
 其使用方法和其他类似软件没有区别，支持官方API和 第三方中转服务，同时也支持网页搜索、网页内容获取和MCP服务器。但是相对来说，也有一些明显的缺点，聊天记录历史不支持批量删除，同时似乎也没有类似于其他官方服务的记忆功能，跨对话之间的内容联想可能存在一定缺失，同时软件也不支持多端的消息同步，这个但瑕不掩瑜，总体来说因其响应速度足够快，用起来足够轻便，还是值得推荐。
@@ -95,7 +95,7 @@ draft: false
 </table>
 
 <p align="center">
-  <img src="AI_tool_recommend/PixPin_2026-05-02_14-27-03.png" width="400" alt="Chatwise设置界面">
+  <img src="./AI_tool_recommend/PixPin_2026-05-02_14-27-03.png" width="400" alt="Chatwise设置界面">
 </p>
 
 ## Android
@@ -144,7 +144,7 @@ Rikkahub是一个和Kelivo类似的开源软件，甚至可以说两者在安卓
 </table>
 
 <p align="center">
-  <img src="AI_tool_recommend/图片1.png" width="400" alt="RikkaHub设置界面">
+  <img src="./AI_tool_recommend/图片1.png" width="400" alt="RikkaHub设置界面">
 </p>
 
 
